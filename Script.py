@@ -297,15 +297,7 @@ Elsa
 ©{message.chat.title}</b>
 """
 
-    CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
-
-
-
-╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
-▫️<a href=https://t.me/MYFLiiX> ᴄʜᴀɴɴᴇʟ </a>
-
-▫️<a href=https://t.me/MYFLiiX_2> sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ </a>
-╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>"""
+    CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : 🎗<a href="https://telegram.me/MyFliix"><b><i>{file_name}</i></b></a>\n━━━━━━━━━━━━━━━━━━━━━━━\n         <b>🌟 </b><b><i>彡 [ </i></b><b><i>@Myfliix</i></b> <i><b>] 彡</b> 🌟</i>"""
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
