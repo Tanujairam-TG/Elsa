@@ -339,3 +339,16 @@ Elsa
 <b>Tʜɪs ᴍᴏᴅᴜʟᴇ ɪs ᴛᴏ ғɪɴᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄᴏᴜɴᴛʀɪᴇs</b>
 • /country [𝖼𝗈𝗎𝗇𝗍𝗋𝗒 𝗇𝖺𝗆𝖾] 
 𝖤𝗑𝖺𝗆𝗉𝗅𝖾 :- <code>/country India</code>"""
+
+
+    WRITE_TXT = """<b>ʜᴇʟᴘ - ᴡʀɪᴛᴇ ᴛᴇxᴛ
+ʙᴏᴛ ᴡʀɪᴛᴇ ʏᴏᴜʀ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴏɴ ᴡʜɪᴛᴇ ᴘᴀɢᴇ ᴡɪᴛʜ ᴀ ᴘᴇɴ ᴛʜᴇɴ
+ /write <your text>
+ᴇxᴀᴍᴘʟᴇ -
+/write hi bro how are you</b>"""
+
+
+
+
+
+
