@@ -744,9 +744,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],  [
              InlineKeyboardButton('ᴄᴏᴜɴᴛʀʏ', callback_data='country'),
              InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='deploy'),
-             InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start')
+             InlineKeyboardButton('ᴡʀɪᴛᴇ', callback_data='write')
         ], [
-             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin')
+             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin'),
+             InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -784,6 +785,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "write":
+        buttons = [[
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons) 
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.WRITE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
