@@ -467,9 +467,9 @@ async def get_shortlink(chat_id, link):
             logger.error(e)
             return f'https://{URL}/shortLink?token={API}&format=json&link={link}'
     else:
-        url = f'https://easysky.in/api'
+        url = f'https://{URL}/api'
         params = {
-            "api": 8a89d6025074799b62a6b2cb178499558efb65ae,
+            "api": ,
             "url": link,
         }
         try:
@@ -483,4 +483,4 @@ async def get_shortlink(chat_id, link):
                         return f'https://{URL}/api?api={API}&link={link}'
         except Exception as e:
             logger.error(e)
-            return f'https://easysky.in/api?api=8a89d6025074799b62a6b2cb178499558efb65ae&link={link}'
+            return f'https://{URL}/api?api={API}&link={link}'
