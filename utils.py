@@ -469,7 +469,7 @@ async def get_shortlink(chat_id, link):
     else:
         url = f'https://{URL}/api'
         params = {
-            "api": ,
+            "api": API,
             "url": link,
         }
         try:
