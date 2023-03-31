@@ -113,7 +113,13 @@ async def pm_text(bot, message):
     user = message.from_user.first_name
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
-    await message.reply_text("<b>Your message has been sent to my moderators !</b>")
+    await message.reply_text("<b>𝐇𝐞𝐲 {first}.
+
+𝐌𝐎𝐕𝐈𝐄𝐒 𝐆𝐑𝐎𝐔𝐏 - @MYFLiiX_2
+
+🔞 𝐒𝐄𝐗𝐈 𝐕𝐈𝐃𝐄𝐎𝐒 - https://t.me/+G_NK1KOuNQAwY2I1
+
+𝐉𝐎𝐈𝐍 𝐁𝐀𝐂𝐊𝐔𝐏 - @MYFLiiX</b>")
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#PM_MSG\n\nName : {user}\n\nID : {user_id}\n\nMessage : {content}</b>"
@@ -200,7 +206,7 @@ async def next_page(bot, query):
     )
     btn.insert(1, 
          [
-             InlineKeyboardButton(f'🔞ᴘᴏʀɴ', 'reqinfo'),
+             InlineKeyboardButton(f'🔞ᴘᴏʀɴ', 'https://t.me/+G_NK1KOuNQAwY2I1'),
              InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
              InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo'),
              InlineKeyboardButton(f'ᴛɪᴘs', 'tinfo')
