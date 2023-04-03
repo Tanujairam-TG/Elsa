@@ -341,12 +341,15 @@ Elsa
 𝖤𝗑𝖺𝗆𝗉𝗅𝖾 :- <code>/country India</code>"""
 
 
-    WRITE_TXT = """<b>ʜᴇʟᴘ - ᴡʀɪᴛᴇ ᴛᴇxᴛ
-ʙᴏᴛ ᴡʀɪᴛᴇ ʏᴏᴜʀ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴏɴ ᴡʜɪᴛᴇ ᴘᴀɢᴇ ᴡɪᴛʜ ᴀ ᴘᴇɴ ᴛʜᴇɴ
- /write <your text>
-ᴇxᴀᴍᴘʟᴇ -
-/write hi bro how are you</b>"""
+    YTTHUMB_TXT = """𝙷𝙴𝙻𝙿𝚂 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝚅𝙸𝙳𝙴𝙾 𝚃𝙷𝚄𝙼𝙱𝙽𝙰𝙸𝙻
 
+⭕𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+
+𝘛𝘺𝘱𝘦 /ytthumb 𝘈𝘯𝘥 𝘝𝘪𝘥𝘦𝘰 𝘓𝘪𝘯𝘬
+
+• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦
+
+<code>/ytthumb https://youtu.be/UyzJ9KEoU0w</code>"""
 
 
 
