@@ -961,8 +961,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "deploy":
         buttons = [[
-           InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/dr_starnge'),
-           InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/dr_starng')
+           InlineKeyboardButton('💎ʀᴇᴘᴏ💎', url='https://t.me/dr_starnge'),
+           InlineKeyboardButton('⚡️ᴏᴡɴᴇʀ⚡️', url='https://t.me/dr_starnge')
         ], [
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin')
         ]]
@@ -1054,7 +1054,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "stats":
+        elif query.data == "ytthumb":
+        buttons = [[
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.YTTHUMB_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('ʀᴇғʀᴇsʜ', callback_data='rfrsh')
