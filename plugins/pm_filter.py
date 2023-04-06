@@ -1045,7 +1045,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.YTTHUMB_TXT,
             reply_markup=reply_markup,
