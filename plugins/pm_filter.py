@@ -113,7 +113,7 @@ async def pm_text(bot, message):
     user = message.from_user.first_name
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
-    await message.reply_text("<b>Your message has been sent to my moderators !</b>")
+    await message.reply_text("<b>𝑯𝒆𝒚 𝑩𝒓𝒐 𝑱𝒐𝒊𝒏 𝑭𝒐𝒓 𝑨𝒍𝒍. @MYFLiiX !</b>")
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#PM_MSG\n\nName : {user}\n\nID : {user_id}\n\nMessage : {content}</b>"
@@ -195,7 +195,7 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f' ♀️ {search} ♀️ ', 'qinfo')
+            InlineKeyboardButton(f' ⚡ {search} ⚡ ', 'qinfo')
         ]
     )
     btn.insert(1, 
@@ -203,7 +203,7 @@ async def next_page(bot, query):
              InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
              InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
              InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo'),
-             InlineKeyboardButton(f'ᴛɪᴘs', 'tinfo')
+             InlineKeyboardButton(f'ᴛɪᴘs', 'tinfo'),
              InlineKeyboardButton("📤 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 📤", callback_data=f"send_fall#files#{key}#{offset}")
          ]
     )
