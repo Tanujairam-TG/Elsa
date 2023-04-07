@@ -1215,6 +1215,9 @@ async def auto_filter(client, msg, spoll=False):
                 ]
                 for file in files
             ]
+    btn.insert(1, [
+        InlineKeyboardButton("📤 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 📤", callback_data=f"send_fall#{pre}#{message.chat.id}-{message.id}#{0}")
+    ])
     btn.insert(0, 
         [
             InlineKeyboardButton(f' ♀️ {search} ♀️ ', 'qinfo')
