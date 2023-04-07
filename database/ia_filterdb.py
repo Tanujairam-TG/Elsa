@@ -152,10 +152,15 @@ async def get_bad_files(query, file_type=None, filter=False):
         filter['file_type'] = file_type
 
     total_results = await Media.count_documents(filter)
+    next_offset = offset + max_results
 
+    if next_offset > total_results:
+        next_offset = ''
     cursor = Media.find(filter)
     # Sort by recent
     cursor.sort('$natural', -1)
+    # Slice files according to offset and max results
+    cursor.skip(offset).limit(max_results)
     # Get list of files
     files = await cursor.to_list(length=total_results)
 
