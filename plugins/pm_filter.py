@@ -199,7 +199,7 @@ async def next_page(bot, query):
         ]
     )
     btn.insert(1, 
-         [
+        [
              InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
              InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
              InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo'),
