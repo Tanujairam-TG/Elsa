@@ -594,7 +594,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             deleted+=1
         deleted = str(deleted)
         await k.edit_text(text=f"<b>Successfully deleted {deleted} PreDVD files.</b>")
-
+#send all
+    elif query.data.startswith("send_fall"):
+        temp_var, ident, key, offset = query.data.split("#")
+        search = BUTTONS.get(key)
+        if not search:
+            await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name),show_alert=True)
+            return
+        files, n_offset, total = await get_search_results(query.message.chat.id, search, offset=int(offset), filter=True)
+        await send_all(client, query.from_user.id, files, ident)
+        await query.answer(f"Hey {query.from_user.first_name}, All files on this page has been sent successfully to your PM !", show_alert=True)
+#send all definition end
     elif query.data == "camrip":
         k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting CamRips... Please wait...</b>")
         files, next_offset, total = await get_bad_files(
