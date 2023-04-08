@@ -723,7 +723,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('⚡ ᴅᴇᴘʟᴏʏ ⚡', callback_data='deploy'),
         ],  [
              InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-             InlineKeyboardButton('ᴍʏ ʙᴏꜱꜱ. 😎', callback_data='own info')
+             InlineKeyboardButton('ᴍʏ ʙᴏꜱꜱ. 😎', url='https://telegram.me/dr_starnge'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
