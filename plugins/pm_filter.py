@@ -1248,7 +1248,7 @@ async def auto_filter(client, msg, spoll=False):
             InlineKeyboardButton("Send All !", callback_data=f"send_fall#{pre}#{message.chat.id}-{message.id}#{0}")
         ]
     )
-    btn.insert(1, 
+    btn.insert(2, 
          [
              InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
              InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
