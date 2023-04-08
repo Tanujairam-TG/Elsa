@@ -152,7 +152,7 @@ async def next_page(bot, query):
             btn = [
                 [
                     InlineKeyboardButton(
-                        text=f"[{get_size(file.file_size)}] {file.file_name}", url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
+                        text=f"⚡[{get_size(file.file_size)}] {file.file_name}", url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                     ),
                 ]
                 for file in files
@@ -161,10 +161,10 @@ async def next_page(bot, query):
             btn = [
                 [
                     InlineKeyboardButton(
-                        text=f"{file.file_name}", url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
+                        text=f"⚡{file.file_name}", url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                     ),
                     InlineKeyboardButton(
-                        text=f"{get_size(file.file_size)}",
+                        text=f"⚡{get_size(file.file_size)}",
                         url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                     ),
                 ]
@@ -175,7 +175,7 @@ async def next_page(bot, query):
             btn = [
                 [
                     InlineKeyboardButton(
-                        text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                        text=f"[{get_size(file.file_size)}] ⚡{file.file_name}", callback_data=f'files#{file.file_id}'
                     ),
                 ]
                 for file in files
@@ -184,10 +184,10 @@ async def next_page(bot, query):
             btn = [
                 [
                     InlineKeyboardButton(
-                        text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
+                        text=f"⚡{file.file_name}", callback_data=f'files#{file.file_id}'
                     ),
                     InlineKeyboardButton(
-                        text=f"{get_size(file.file_size)}",
+                        text=f"⚡{get_size(file.file_size)}",
                         callback_data=f'files_#{file.file_id}',
                     ),
                 ]
@@ -679,36 +679,36 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(MSG_ALRT)
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('ᴍᴀɴᴜᴀʟ', callback_data='manuelfilter'),
-            InlineKeyboardButton('ᴀᴜᴛᴏ', callback_data='autofilter'),
-            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛ', callback_data='coct')
+            InlineKeyboardButton('⚙️ ᴍᴀɴᴜᴀʟ ⚙️', callback_data='manuelfilter'),
+            InlineKeyboardButton('💫 ᴀᴜᴛᴏ 💫', callback_data='autofilter'),
+            InlineKeyboardButton('🔗 ᴄᴏɴɴᴇᴄᴛ 🔗', callback_data='coct')
         ], [
-            InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra'),
-            InlineKeyboardButton('sᴏɴɢ', callback_data='song'),
-            InlineKeyboardButton('ᴛᴛs', callback_data='tts')
+            InlineKeyboardButton('💎 ᴇxᴛʀᴀ 💎', callback_data='extra'),
+            InlineKeyboardButton('🎵 sᴏɴɢ 🎵', callback_data='song'),
+            InlineKeyboardButton('🎤 ᴛᴛs 🎤', callback_data='tts')
         ], [
-            InlineKeyboardButton('ᴠɪᴅᴇᴏ', callback_data='video'),
-            InlineKeyboardButton('ᴛɢʀᴀᴘʜ', callback_data='tele'),
-            InlineKeyboardButton('ᴀᴜᴅʙᴏᴏᴋ', callback_data='abook')
+            InlineKeyboardButton('🎦 ᴠɪᴅᴇᴏ 🎦', callback_data='video'),
+            InlineKeyboardButton('🌟 ᴛɢʀᴀᴘʜ 🌟', callback_data='tele'),
+            InlineKeyboardButton('🔊 ᴀᴜᴅʙᴏᴏᴋ 🔊', callback_data='abook')
          ], [
-             InlineKeyboardButton('ᴄᴏᴠɪᴅ', callback_data='corona'),
-             InlineKeyboardButton('ɢᴀᴍᴇs', callback_data='fun'),
-             InlineKeyboardButton('ʏᴛᴛʜᴜᴍʙ', callback_data='ytthumb')
+             InlineKeyboardButton('😷 ᴄᴏᴠɪᴅ 😷', callback_data='corona'),
+             InlineKeyboardButton('🎮 ɢᴀᴍᴇs 🎮', callback_data='fun'),
+             InlineKeyboardButton('💯 ʏᴛᴛʜᴜᴍʙ 💯', callback_data='ytthumb')
          ], [
-             InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings'),
-             InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='json'),
-             InlineKeyboardButton('sᴛɪᴄᴋɪᴅ', callback_data='sticker')
+             InlineKeyboardButton('✅ ᴘɪɴɢ ✅', callback_data='pings'),
+             InlineKeyboardButton('🎭 ᴊsᴏɴᴇ 🎭', callback_data='json'),
+             InlineKeyboardButton('🔰 sᴛɪᴄᴋɪᴅ 🔰', callback_data='sticker')
          ], [
-             InlineKeyboardButton('ᴡʜᴏɪs', callback_data='whois'),
-             InlineKeyboardButton('ᴜʀʟsʜᴏʀᴛ', callback_data='urlshort'),
-             InlineKeyboardButton('ғᴏɴᴛ', callback_data='font')
+             InlineKeyboardButton('📊 ᴡʜᴏɪs 📊', callback_data='whois'),
+             InlineKeyboardButton('🔗 ᴜʀʟsʜᴏʀᴛ 🔗', callback_data='urlshort'),
+             InlineKeyboardButton('📝 ғᴏɴᴛ 📝', callback_data='font')
          ], [
-             InlineKeyboardButton('ɢᴛʀᴀɴs', callback_data='gtrans'),
-             InlineKeyboardButton('ᴄᴀʀʙᴏɴ', callback_data='carb'),
-             InlineKeyboardButton('ᴡʀɪᴛᴇ', callback_data='write')
+             InlineKeyboardButton('🌊 ɢᴛʀᴀɴs 🌊', callback_data='gtrans'),
+             InlineKeyboardButton('🏴‍☠️ ᴄᴀʀʙᴏɴ 🏴‍☠️', callback_data='carb'),
+             InlineKeyboardButton('🖊️ ᴡʀɪᴛᴇ 🖊️', callback_data='write')
         ],  [
-             InlineKeyboardButton('ᴄᴏᴜɴᴛʀʏ', callback_data='country'),
-             InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='deploy'),
+             InlineKeyboardButton('🌍 ᴄᴏᴜɴᴛʀʏ 🌍', callback_data='country'),
+             InlineKeyboardButton('⚡ ᴅᴇᴘʟᴏʏ ⚡', callback_data='deploy'),
         ],  [
              InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='aswin'),
              InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start')
