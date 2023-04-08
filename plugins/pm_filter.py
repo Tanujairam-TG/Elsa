@@ -1268,6 +1268,8 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
              InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo'),
              InlineKeyboardButton(f'ᴛɪᴘs', 'tinfo')
+         ],[
+             InlineKeyboardButton("Send All !", callback_data=f"send_fall#{pre}#{message.chat.id}-{message.id}#{0}")
          ]
     )
 
