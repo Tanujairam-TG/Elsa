@@ -633,7 +633,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if not search:
             await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name),show_alert=True)
             return
-        files, n_offset, total = await get_search_results(query.message.chat.id, search, offset=int(offset), filter=True)
+        files, n_offset, total = await get_search_results(search, offset=int(offset), filter=True)
         await send_all(client, query.from_user.id, files, ident)
         await query.answer(f"Hey {query.from_user.first_name}, All files on this page has been sent successfully to your PM !", show_alert=True)
 
@@ -1170,7 +1170,7 @@ async def auto_filter(client, msg, spoll=False):
             return
         if len(message.text) < 100:
             search = message.text
-            files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
+            files, offset, total_results = await get_search_results(message.chat.id, search.lower(), offset=0, filter=True)
             if not files:
                 if settings["spell_check"]:
                     return await advantage_spell_chok(client, msg)
