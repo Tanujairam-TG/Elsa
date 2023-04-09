@@ -205,7 +205,7 @@ async def next_page(bot, query):
     )
     btn.insert(2, 
          [
-             InlineKeyboardButton('ᴍʏ ʙᴏꜱꜱ. 😎', url='https://telegram.me/dr_starnge'),
+             InlineKeyboardButton('ᴘᴏʀɴ🔞', url='https://t.me/+G_NK1KOuNQAwY2I1'),
              InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
              InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo'),
              InlineKeyboardButton(f'ᴛɪᴘs', 'tinfo'),
@@ -723,7 +723,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('⚡ ᴅᴇᴘʟᴏʏ ⚡', callback_data='deploy'),
         ],  [
              InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-             InlineKeyboardButton('ᴍʏ ʙᴏꜱꜱ. 😎', url='https://telegram.me/dr_starnge'),
+             InlineKeyboardButton('ᴘᴏʀɴ🔞', url='https://t.me/+G_NK1KOuNQAwY2I1'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1250,7 +1250,7 @@ async def auto_filter(client, msg, spoll=False):
     )
     btn.insert(2, 
          [
-             InlineKeyboardButton('ᴍʏ ʙᴏꜱꜱ. 😎', url='https://telegram.me/dr_starnge'),
+             InlineKeyboardButton('ᴘᴏʀɴ🔞', url='https://t.me/+G_NK1KOuNQAwY2I1'),
              InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
              InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo'),
              InlineKeyboardButton(f'ᴛɪᴘs', 'tinfo')
